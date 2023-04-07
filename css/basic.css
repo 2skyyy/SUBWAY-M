@@ -401,33 +401,32 @@ footer{
 }
 
 .side_nav{
+   width: 95%;
    height: 400px;
    background: #fff;
    border-radius: 30px 0;
-   margin-bottom: 100px;
+   margin: 0 auto 100px;
 }
 
 .side_nav ul{
    display: flex;
    flex-direction: column;
    height: 400px;
+   align-items: center;
 }
 
 .side_nav li{
    position: relative;
+   display: flex;
    flex: 1;
-   height: 50px;
+   width: 100%;
    border-bottom: 1px solid #f6f6f6;
+   align-items: center;
+   padding-left: 20px;
 }
 
-.side_nav a{
-   position: absolute;
-   display: block;
-   width: 100%;
-   top: 50%;
-   transform: translateY(-50%);
-   padding: 0 20px;
-}
+.side_nav li::after{}
+
 
 .side_nav_icon1,
 .side_nav_icon2,
@@ -436,9 +435,9 @@ footer{
 .side_nav_icon5,
 .side_nav_icon6{
    display: inline-block;
+   margin-right: 10px;
    width: 26px;
    height: 26px;
-   margin-right: 10px;
 }
 
 .side_nav_icon1{
@@ -467,7 +466,61 @@ footer{
 }
 
 .side_nav_open{
-   float: right;
+   position: absolute;
+   right: 20px;
    font-size: 20px;
    color: #B2BBBA
 }
+
+.side_nav_open::after {
+   display: block;
+   content: "";
+   clear: both;
+}
+
+.sub-menu {
+   display: none;
+   position: absolute;
+   background-color: black;
+   width: 100%;        
+   left: 0;
+   top: 100%;
+   z-index: 1;
+   }
+
+.sandwich{
+   width: 95%;
+   margin: 0 auto;
+}
+
+.sandwich > ul {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   padding: 30px 0;
+   border-radius: 30px 0;
+   background: #fff;
+}
+
+.sandwich ul > li {
+   flex: 33.33%;
+   text-align: center;
+}
+
+.sandwich ul li h3 {
+   font-size: 18px;
+   font-weight: bold;
+   padding: 15px 0;
+}
+
+.sandwich ul li p {
+   font-size: 12px;
+   font-weight: bold;
+   color: #a7a7a7
+}
+
+.sandwich img {
+   width: 100%;
+}
+
+

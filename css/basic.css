@@ -503,7 +503,7 @@ footer{
 }
 
 .sandwich ul > li {
-   flex: 33.33%;
+   flex: 50%;
    text-align: center;
 }
 
